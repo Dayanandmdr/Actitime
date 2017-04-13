@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 3, Errors: 0, Skipped: 6, Time elapsed: 0.608 sec <<< FAILURE! - in TestSuite
+precondition(com.Scripts.Login_script)  Time elapsed: 0.423 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: com/google/common/base/Function
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+
+precondition(com.Scripts.Login_script)  Time elapsed: 0.424 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: com/google/common/base/Function
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+
+precondition(com.Scripts.Login_script)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: com/google/common/base/Function
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Function
+

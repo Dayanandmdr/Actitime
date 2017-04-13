@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.Generic.Customlistner"/>
+  </listeners>
+  <test name="Test(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.Scripts.Login_script">
+        <methods>
+          <include name="postcondition"/>
+          <include name="postcondition"/>
+          <include name="precondition"/>
+          <include name="precondition"/>
+          <include name="precondition"/>
+          <include name="login_action"/>
+        </methods>
+      </class> <!-- com.Scripts.Login_script -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test name="Test2(failed)" parallel="tests">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="com.Scripts.Login_script">
+        <methods>
+          <include name="postcondition"/>
+          <include name="postcondition"/>
+          <include name="precondition"/>
+          <include name="precondition"/>
+          <include name="precondition"/>
+          <include name="login_action"/>
+        </methods>
+      </class> <!-- com.Scripts.Login_script -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test name="Test1(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.Scripts.Login_script">
+        <methods>
+          <include name="postcondition"/>
+          <include name="postcondition"/>
+          <include name="precondition"/>
+          <include name="precondition"/>
+          <include name="precondition"/>
+          <include name="login_action"/>
+        </methods>
+      </class> <!-- com.Scripts.Login_script -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
