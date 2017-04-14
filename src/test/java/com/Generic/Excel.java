@@ -11,7 +11,7 @@ public class Excel {
 	
 	public static int rowcount(String xlpath,String sheetname)
 	{
-		System.out.println("hi");
+		
 		try{
 		FileInputStream fis=new FileInputStream(xlpath);
 		Workbook w=WorkbookFactory.create(fis);
