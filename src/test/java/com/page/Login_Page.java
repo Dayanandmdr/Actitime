@@ -13,7 +13,7 @@ public class Login_Page extends Base_Page {
 	@FindBy(name="pwd")
 	private WebElement pw;
 	
-	@FindBy(id="loginButto")
+	@FindBy(id="loginButton")
 	private WebElement login;
 	
 	

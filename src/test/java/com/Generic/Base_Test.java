@@ -15,19 +15,19 @@ import org.testng.xml.XmlTest;
 public class Base_Test {
 
 	public WebDriver driver;
-	@BeforeMethod
+	@BeforeClass
 	public void precondition(XmlTest t)
 	{
 		String browser=t.getParameter("browser");
+		System.out.println(browser);
 		if(browser.equals("firefox"))
 		{
-			System.getProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe");
 			driver=new FirefoxDriver();
 		}
-		else 
-			if(browser.equals("chrome"))
+		else if(browser.equals("chrome"))
 			{
-				System.getProperty("webdriver.chrome.driver","./Drivers/chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver","./Drivers/chromedriver.exe");
 				driver=new ChromeDriver();
 			}
 			else
@@ -39,7 +39,7 @@ public class Base_Test {
 		 driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		 driver.manage().window().maximize();
 	}
-	@AfterMethod
+	@AfterClass
 	public void postcondition()
 	{
 		driver.close();

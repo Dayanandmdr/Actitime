@@ -7,24 +7,27 @@
   <test name="Test">
   <parameter name="browser" value="chrome"></parameter>
     <classes>
-         <class name="com.Scripts.Login_script"/>
+       
+
+      <class name="com.Scripts.User_script"/> 
+    </classes>
+  </test> <!-- Test -->
+  
+<!--   <test name="Test1"> -->
+<!--   <parameter name="browser" value="firefox"></parameter> -->
+<!--     <classes> -->
+        
+<!--       <class name="com.Scripts.User_script"/> -->
+       
+<!--     </classes> -->
+<!--   </test> Test -->
+  
+<!--   <test name="Test2"> -->
+<!--   <parameter name="browser" value="ie"></parameter> -->
+<!--     <classes> -->
      
-    </classes>
-  </test> <!-- Test -->
-  
-  <test name="Test1">
-  <parameter name="browser" value="firefox"></parameter>
-    <classes>
-        <class name="com.Scripts.Login_script"/>
+<!--       <class name="com.Scripts.User_script"/> -->
        
-    </classes>
-  </test> <!-- Test -->
-  
-  <test name="Test2">
-  <parameter name="browser" value="ie"></parameter>
-    <classes>
-     <class name="com.Scripts.Login_script"/>
-       
-    </classes>
-  </test> <!-- Test -->
+<!--     </classes> -->
+<!--   </test> Test -->
 </suite> <!-- Suite -->
